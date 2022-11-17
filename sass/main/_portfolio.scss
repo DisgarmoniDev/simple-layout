@@ -1,0 +1,46 @@
+.portfolio {
+    width: 100%;
+    height: auto;
+    background-color: $color-bg;
+    &-conteiner {
+        width: 70%;
+        height: auto;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 100px 0 100px 0;
+    }
+    &-title {
+        @include title;
+    }
+    &-card {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 90px;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        .portfolio-img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        a {
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: $color-black;
+        }
+    }
+}

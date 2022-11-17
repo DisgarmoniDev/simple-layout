@@ -1,0 +1,15 @@
+@mixin font-Family {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+@mixin title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 40px;
+    text-align: center; 
+}

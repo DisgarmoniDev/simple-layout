@@ -1,0 +1,44 @@
+.contacts {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    &-title{
+        @include title;
+    }
+    p {
+        text-align: center;
+        white-space: pre-line; 
+    }
+    .btns {
+        width: 180px;
+        height: auto;
+        margin: 30px auto 80px auto;
+        .btn {
+            width: 180px;
+            height: 42px;
+            background: $color-black;
+            color: white;
+            font-weight: 700;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            &:active {
+                background: $color-grey;
+            }
+        }
+    }
+
+    &-social {
+        width: 350px;
+        height: auto;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .like {
+        color: $color-grey;
+        margin-bottom: 125px;
+    }
+    
+}

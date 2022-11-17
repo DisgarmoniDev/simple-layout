@@ -1,0 +1,100 @@
+.header {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    .nav {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-bottom: 1px solid $color-grey;
+        &-ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 88px;
+        }
+        a {
+            text-decoration: none;
+        }
+        &-li {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22px;
+            color: $color-grey;
+            &:hover {
+                color: $color-black;
+            }
+        }
+    }
+    .title {
+        width: 100%;
+        height: 190px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+        &-name {
+            width: 125px;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+        }
+
+        &-info {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &-language {
+            width: 78px;
+            height: 20px;
+            transform: rotate(-90deg);
+            position: relative;
+            align-self: center;
+            padding-top: 65px;
+            
+            &::before {
+                content: "|";
+                font-weight: 700;
+                color: $color-black;
+                position: absolute;
+                right: 55%;
+            }
+
+            input[type="radio"] {
+                display: none;
+            }
+
+    
+            label {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
+                color: $color-grey;
+                padding: 5px;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                    color: $color-grey;
+                }
+            }
+
+            input[type="radio"]:checked + label {
+                color: $color-black;
+            }
+        }
+       
+    }
+    .photo {
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 1350px;
+            max-height: 550px;
+        }
+    }
+}

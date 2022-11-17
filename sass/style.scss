@@ -1,0 +1,65 @@
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/mixin";
+@import "./main/header";
+@import "./main/about";
+@import "./main/skills";
+@import "./main/portfolio";
+@import "./main/contacts";
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+
+
+body {
+    @include font-Family;
+}
+
+@media (max-width:520px) {
+    .header {
+        .nav {
+            height: 150px;
+            .nav-ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+        .title {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            &-info, &-name  {
+                text-align: center;
+            }
+            .title-language {
+                display: none;
+            }
+        }
+    } 
+    
+    .program-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
